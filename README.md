@@ -1,5 +1,5 @@
 # 💫 About Me:
-Im currently working with, TypeScript, next.js, tailwindcss, node, nest, docker, git, github, and prisma<br>
+I'm currently working with, TypeScript, Next.js, Tailwindcss, git, and github.<br>
 
 
 ## 🌐 Socials:
