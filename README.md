@@ -1,6 +1,6 @@
 # 💫 About Me:
 
-I'm currently working with, TypeScript, Next.js, Tailwindcss, git, and github.<br>
+I'm currently working with, TypeScript, Next.js, React, Tailwindcss, git, and github.<br>
 
 ## 🌐 Socials:
 
