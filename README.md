@@ -1,4 +1,4 @@
-# 💫 About Me:
+#  About Me:
 
 I'm currently working with, TypeScript, Next.js, React, Tailwindcss, git, and github.<br>
 
