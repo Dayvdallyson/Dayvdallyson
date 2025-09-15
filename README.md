@@ -29,7 +29,7 @@ I'm a **Full-Stack Developer** currently working with **Next.js, TypeScript, Rea
 ## ✨ About Me
 
 - 🏢 Currently working as a **Frontend Developer** with **Next.js** & **TailwindCSS**  
-- 🔧 - 🔧 Exploring **Django** for backend development — I love **automation**, building **efficient workflows**, and the **clean, simple syntax** that makes development faster and enjoyable.
+- 🔧 Exploring **Django** for backend development — I love **automation**, building **efficient workflows**, and the **clean, simple syntax** that makes development faster and enjoyable.
 - 🚀 Passionate about building **efficient, user-friendly web applications**  
 - 💡 Always learning and experimenting with **new technologies**  
 - 🎯 Goal: Become a **senior full-stack developer**, capable of delivering **impactful projects**  
