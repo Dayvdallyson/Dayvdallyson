@@ -6,7 +6,6 @@ I'm a **Full-Stack Developer** currently working with **Next.js, TypeScript, Rea
 
 ## 🌐 Connect with me:
 
-[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/Dayvd100#0912)  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dayvd-allyson-273a41232/)  
 
 ---
