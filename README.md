@@ -36,12 +36,6 @@ I'm a **Full-Stack Developer** currently working with **Next.js, TypeScript, Rea
 
 ---
 
-##  📊 GitHub Stats
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Dayvdallyson&layout=compact&theme=radical)  
-
----
-
 ### ✍️ Random Dev Quote
 
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)  
