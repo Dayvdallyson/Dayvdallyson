@@ -1,6 +1,6 @@
-# Hi there, I'm Dayvd Allyson 👋
+# Dayvd Allyson
 
-I'm a **Full-Stack Developer** currently working with **Next.js, TypeScript, React, TailwindCSS** for frontend and **Django** for backend development. I'm building scalable applications, focusing on clean code, great UX, and most important impactful products.  
+Software Engineer building scalable web products.
 
 ---
 
