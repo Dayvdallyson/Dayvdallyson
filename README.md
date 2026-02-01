@@ -1,6 +1,6 @@
 # Dayvd Allyson
 
-**Software Engineer** focused on building **scalable, secure, and high‑performance web products**.
+**Software Engineer | Scalable Systems | Python • TypeScript | LLMs & AI Integrations**.
 
 ---
 
