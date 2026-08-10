@@ -1,5 +1,5 @@
 # Dayvd Allyson
-**AI Engineer | LLMs, RAG & Agentic Systems | Python** — building production-grade AI systems on top of solid backend engineering.
+**Software Engineer | LLMs, RAG & Agentic Systems | Python** — building production-grade AI systems on top of solid backend engineering.
 
 ---
 
