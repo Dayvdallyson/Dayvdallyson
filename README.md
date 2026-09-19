@@ -1,5 +1,5 @@
 # Dayvd Costa
-**Senior Backend Software Engineer | Distributed Systems & Event-Driven Architecture | Python | LLMs & Agentic Systems**
+**Backend Software Engineer | Distributed Systems & Event-Driven Architecture | Python | LLMs & Agentic Systems**
 
 Building scalable, event-driven backend platforms for fintech — and extending them with production-grade LLM/RAG and multi-agent systems.
 
