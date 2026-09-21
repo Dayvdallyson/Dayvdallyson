@@ -79,14 +79,14 @@
   </g>
   <g class="fade f5">
     <rect class="chip" x="266" y="242" width="76"  height="30" rx="15"/>
-    <text class="mono chipTx" x="304" y="262" font-size="12" text-anchor="middle">Kafka</text>
+    <text class="mono chipTx" x="304" y="262" font-size="12" text-anchor="middle">AWS</text>
   </g>
   <g class="fade f6">
     <rect class="chip" x="352" y="242" width="110" height="30" rx="15"/>
-    <text class="mono chipTx" x="407" y="262" font-size="12" text-anchor="middle">PostgreSQL</text>
+    <text class="mono chipTx" x="407" y="262" font-size="12" text-anchor="middle">Database</text>
   </g>
   <g class="fade f7">
     <rect class="chip" x="472" y="242" width="84"  height="30" rx="15"/>
-    <text class="mono chipTx" x="514" y="262" font-size="12" text-anchor="middle">Docker</text>
+    <text class="mono chipTx" x="514" y="262" font-size="12" text-anchor="middle">LLM</text>
   </g>
 </svg>
