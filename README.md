@@ -83,8 +83,8 @@ Senior Software Engineer at **Dotless**, an AI-powered financial-advisory SaaS �
 ---
 
 ### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+![]“You can’t learn everything, but you have to convince yourself that you can learn anything….
 
 ---
 
-[![](https://visitcount.itsvg.in/api?id=Dayvdallyson&icon=0&color=0)](https://visitcount.itsvg.in)
+[![] - John Carmack
