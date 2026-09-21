@@ -145,16 +145,9 @@ Grew within the company from Software Engineer to Tech Lead: now own architectur
 
 🇧🇷 Portuguese (native) · 🇺🇸 English (highly proficient)
 
----
 
 <div align="center">
 
-### ✍️ Dev Quote
-
-> ### *"You can't learn everything, but you have to convince yourself that you can learn anything."*
->
-> **— John Carmack**
+<img src="./assets/quote-card.svg" alt="You can't learn everything, but you have to convince yourself that you can learn anything. — John Carmack" width="800" />
 
 </div>
-
----
