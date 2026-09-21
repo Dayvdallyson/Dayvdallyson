@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="230" viewBox="0 0 820 230"
+     role="img" aria-label="Quote by John Carmack">
+  <defs>
+    <linearGradient id="borderGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#A277FF"/>
+      <stop offset="50%"  stop-color="#61FFCA"/>
+      <stop offset="100%" stop-color="#A277FF"/>
+      <animate attributeName="x1" values="-100%;100%" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0%;200%"   dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .card   { fill: #0F111A; }
+    .bar    { stroke: #2A2F45; }
+    .file   { fill: #565F89; }
+    .text   { fill: #C0CAF5; }
+    .author { fill: #61FFCA; }
+    .mark   { fill: #A277FF; opacity: .16; }
+
+    @media (prefers-color-scheme: light) {
+      .card   { fill: #FFFFFF; }
+      .bar    { stroke: #D8DEE9; }
+      .file   { fill: #8A91A8; }
+      .text   { fill: #1F2430; }
+      .author { fill: #0F9D77; }
+      .mark   { fill: #7C4DFF; opacity: .14; }
+    }
+
+    .fade { opacity: 0; animation: fadeIn .8s ease-out forwards; }
+    .d1 { animation-delay: .1s; }
+    .d2 { animation-delay: .35s; }
+    .d3 { animation-delay: .6s; }
+    @keyframes fadeIn { to { opacity: 1; } }
+  </style>
+
+  <rect class="card" x="2" y="2" width="816" height="226" rx="16"
+        stroke="url(#borderGlow)" stroke-width="2"/>
+
+  <circle cx="34" cy="36" r="6" fill="#FF6767"/>
+  <circle cx="54" cy="36" r="6" fill="#FFCA85"/>
+  <circle cx="74" cy="36" r="6" fill="#61FFCA"/>
+  <text class="file" x="100" y="41" font-family="ui-monospace, 'JetBrains Mono', 'Fira Code', monospace"
+        font-size="13">carmack.txt</text>
+  <line class="bar" x1="20" y1="60" x2="800" y2="60" stroke-width="1"/>
+
+  <text class="mark" x="28" y="158" font-family="Georgia, serif" font-size="130">&#8220;</text>
+
+  <text class="text fade d1" x="84" y="116"
+        font-family="ui-monospace, 'JetBrains Mono', 'Fira Code', monospace" font-size="19">
+    You can't learn everything, but you have to
+  </text>
+  <text class="text fade d2" x="84" y="150"
+        font-family="ui-monospace, 'JetBrains Mono', 'Fira Code', monospace" font-size="19">
+    convince yourself that you can learn anything.
+  </text>
+
+  <text class="author fade d3" x="784" y="196" text-anchor="end"
+        font-family="ui-monospace, 'JetBrains Mono', 'Fira Code', monospace"
+        font-size="15" font-style="italic">— John Carmack</text>
+</svg>
