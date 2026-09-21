@@ -1,81 +1,82 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="400" viewBox="0 0 900 400"
-     role="img" aria-label="Multi-agent customer support architecture: user to supervisor, routing to Order, Refund and Knowledge agents, each backed by payments API, PostgreSQL and pgvector">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520"
+     role="img" aria-label="Multi-agent customer support: customer request goes to a supervisor that routes to Order, Refund and Knowledge agents, each backed by Orders API, Payments API and pgvector">
+  <title>Multi-agent customer support — request flow</title>
+
   <style>
-    .bg     { fill: none; }
     .node   { fill: #151925; stroke: #2A2F45; }
     .sup    { fill: #1C1730; stroke: #A277FF; }
+    .leaf   { fill: #121620; stroke: #232838; }
     .edge   { stroke: #2A2F45; fill: none; }
     .label  { fill: #C0CAF5; }
     .sub    { fill: #565F89; }
     .title  { fill: #A277FF; }
     .dot    { fill: #61FFCA; }
 
-    @media (prefers-color-scheme: light) {
-      .node  { fill: #F7F9FC; stroke: #D8DEE9; }
-      .sup   { fill: #F3EEFF; stroke: #7C4DFF; }
-      .edge  { stroke: #C7CEDB; }
-      .label { fill: #1F2430; }
-      .sub   { fill: #8A91A8; }
-      .title { fill: #7C4DFF; }
-      .dot   { fill: #0F9D77; }
-    }
-    .mono { font-family: ui-monospace, 'JetBrains Mono', 'SF Mono', Menlo, monospace; }
+    .mono { font-family: ui-monospace, 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace; }
   </style>
 
-  <text class="mono title" x="40" y="34" font-size="14" letter-spacing="1.5">MULTI-AGENT CUSTOMER SUPPORT — REQUEST FLOW</text>
+  <text class="mono title" x="40" y="36" font-size="15" letter-spacing="1.5">MULTI-AGENT CUSTOMER SUPPORT — REQUEST FLOW</text>
 
-  <path class="edge" d="M170,220 H250"            stroke-width="1.5"/>
-  <path class="edge" d="M400,220 C445,220 445,120 490,120" stroke-width="1.5"/>
-  <path class="edge" d="M400,220 H490"            stroke-width="1.5"/>
-  <path class="edge" d="M400,220 C445,220 445,320 490,320" stroke-width="1.5"/>
-  <path class="edge" d="M640,120 H730"            stroke-width="1.5"/>
-  <path class="edge" d="M640,220 H730"            stroke-width="1.5"/>
-  <path class="edge" d="M640,320 H730"            stroke-width="1.5"/>
+  <!-- edges -->
+  <path class="edge" d="M450,116 V150" stroke-width="1.5"/>
+  <path class="edge" d="M450,210 C450,250 165,240 165,280" stroke-width="1.5"/>
+  <path class="edge" d="M450,210 V280" stroke-width="1.5"/>
+  <path class="edge" d="M450,210 C450,250 735,240 735,280" stroke-width="1.5"/>
+  <path class="edge" d="M165,344 V400" stroke-width="1.5"/>
+  <path class="edge" d="M450,344 V400" stroke-width="1.5"/>
+  <path class="edge" d="M735,344 V400" stroke-width="1.5"/>
 
-  <circle class="dot" r="3.5">
-    <animateMotion dur="4s" repeatCount="indefinite"
-      path="M170,220 H250 M400,220 C445,220 445,120 490,120 M640,120 H730"/>
+  <!-- in-flight requests -->
+  <circle class="dot" r="4">
+    <animateMotion dur="4.5s" repeatCount="indefinite"
+      path="M450,116 V150 M450,210 C450,250 165,240 165,280 M165,344 V400"/>
   </circle>
-  <circle class="dot" r="3.5" opacity=".75">
-    <animateMotion dur="4s" begin="1.3s" repeatCount="indefinite"
-      path="M170,220 H250 M400,220 H490 M640,220 H730"/>
+  <circle class="dot" r="4" opacity=".8">
+    <animateMotion dur="4.5s" begin="1.5s" repeatCount="indefinite"
+      path="M450,116 V150 M450,210 V280 M450,344 V400"/>
   </circle>
-  <circle class="dot" r="3.5" opacity=".75">
-    <animateMotion dur="4s" begin="2.6s" repeatCount="indefinite"
-      path="M170,220 H250 M400,220 C445,220 445,320 490,320 M640,320 H730"/>
+  <circle class="dot" r="4" opacity=".8">
+    <animateMotion dur="4.5s" begin="3s" repeatCount="indefinite"
+      path="M450,116 V150 M450,210 C450,250 735,240 735,280 M735,344 V400"/>
   </circle>
 
-  <rect class="node" x="40" y="192" width="130" height="56" rx="10" stroke-width="1.5"/>
-  <text class="mono label" x="105" y="218" font-size="13" text-anchor="middle">Customer</text>
-  <text class="mono sub"   x="105" y="236" font-size="10" text-anchor="middle">request</text>
+  <!-- entry -->
+  <rect class="node" x="325" y="60" width="250" height="56" rx="12" stroke-width="1.5"/>
+  <text class="mono label" x="450" y="86"  font-size="16" text-anchor="middle">Customer</text>
+  <text class="mono sub"   x="450" y="105" font-size="12" text-anchor="middle">natural language request</text>
 
-  <rect class="sup" x="250" y="192" width="150" height="56" rx="10" stroke-width="2"/>
-  <text class="mono label" x="325" y="216" font-size="13" text-anchor="middle" font-weight="600">Supervisor</text>
-  <text class="mono sub"   x="325" y="234" font-size="10" text-anchor="middle">intent routing</text>
+  <!-- supervisor -->
+  <rect class="sup" x="325" y="150" width="250" height="60" rx="12" stroke-width="2"/>
+  <text class="mono label" x="450" y="178" font-size="16" text-anchor="middle" font-weight="600">Supervisor</text>
+  <text class="mono sub"   x="450" y="197" font-size="12" text-anchor="middle">intent routing · state</text>
 
-  <rect class="node" x="490" y="92" width="150" height="56" rx="10" stroke-width="1.5"/>
-  <text class="mono label" x="565" y="116" font-size="13" text-anchor="middle">Order Agent</text>
-  <text class="mono sub"   x="565" y="134" font-size="10" text-anchor="middle">stock · tracking</text>
+  <!-- agents -->
+  <rect class="node" x="40" y="280" width="250" height="64" rx="12" stroke-width="1.5"/>
+  <text class="mono label" x="165" y="308" font-size="16" text-anchor="middle">Order Agent</text>
+  <text class="mono sub"   x="165" y="328" font-size="12" text-anchor="middle">stock · tracking</text>
 
-  <rect class="node" x="490" y="192" width="150" height="56" rx="10" stroke-width="1.5"/>
-  <text class="mono label" x="565" y="216" font-size="13" text-anchor="middle">Refund Agent</text>
-  <text class="mono sub"   x="565" y="234" font-size="10" text-anchor="middle">human-in-the-loop</text>
+  <rect class="node" x="325" y="280" width="250" height="64" rx="12" stroke-width="1.5"/>
+  <text class="mono label" x="450" y="308" font-size="16" text-anchor="middle">Refund Agent</text>
+  <text class="mono sub"   x="450" y="328" font-size="12" text-anchor="middle">human-in-the-loop</text>
 
-  <rect class="node" x="490" y="292" width="150" height="56" rx="10" stroke-width="1.5"/>
-  <text class="mono label" x="565" y="316" font-size="13" text-anchor="middle">Knowledge Agent</text>
-  <text class="mono sub"   x="565" y="334" font-size="10" text-anchor="middle">policy RAG</text>
+  <rect class="node" x="610" y="280" width="250" height="64" rx="12" stroke-width="1.5"/>
+  <text class="mono label" x="735" y="308" font-size="16" text-anchor="middle">Knowledge Agent</text>
+  <text class="mono sub"   x="735" y="328" font-size="12" text-anchor="middle">policy RAG</text>
 
-  <rect class="node" x="730" y="92"  width="130" height="56" rx="10" stroke-width="1.5"/>
-  <text class="mono label" x="795" y="125" font-size="12" text-anchor="middle">Orders API</text>
+  <!-- backends -->
+  <rect class="leaf" x="40" y="400" width="250" height="58" rx="12" stroke-width="1.5"/>
+  <text class="mono label" x="165" y="426" font-size="15" text-anchor="middle">Orders API</text>
+  <text class="mono sub"   x="165" y="445" font-size="11" text-anchor="middle">REST · idempotent</text>
 
-  <rect class="node" x="730" y="192" width="130" height="56" rx="10" stroke-width="1.5"/>
-  <text class="mono label" x="795" y="225" font-size="12" text-anchor="middle">Payments API</text>
+  <rect class="leaf" x="325" y="400" width="250" height="58" rx="12" stroke-width="1.5"/>
+  <text class="mono label" x="450" y="426" font-size="15" text-anchor="middle">Payments API</text>
+  <text class="mono sub"   x="450" y="445" font-size="11" text-anchor="middle">refund · chargeback</text>
 
-  <rect class="node" x="730" y="292" width="130" height="56" rx="10" stroke-width="1.5"/>
-  <text class="mono label" x="795" y="318" font-size="12" text-anchor="middle">pgvector</text>
-  <text class="mono sub"   x="795" y="334" font-size="10" text-anchor="middle">policy embeddings</text>
+  <rect class="leaf" x="610" y="400" width="250" height="58" rx="12" stroke-width="1.5"/>
+  <text class="mono label" x="735" y="426" font-size="15" text-anchor="middle">pgvector</text>
+  <text class="mono sub"   x="735" y="445" font-size="11" text-anchor="middle">policy embeddings</text>
 
-  <text class="mono sub" x="40" y="382" font-size="11">
+  <text class="mono sub" x="40" y="498" font-size="12">
     FastAPI · LangGraph · pgvector · Redis · Kafka · AWS (SQS, SNS, Lambda, RDS, ECS)
   </text>
 </svg>
