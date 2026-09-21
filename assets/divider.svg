@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="12" viewBox="0 0 900 12" role="presentation">
+  <defs>
+    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#A277FF" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#A277FF" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#A277FF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="5" width="900" height="2" fill="url(#line)"/>
+  <circle cy="6" r="3.5" fill="#61FFCA">
+    <animate attributeName="cx" values="60;840;60" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".2;1;.2" dur="9s" repeatCount="indefinite"/>
+  </circle>
+</svg>
