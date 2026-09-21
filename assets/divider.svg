@@ -1,14 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="12" viewBox="0 0 900 12" role="presentation">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="14" viewBox="0 0 900 14"
+     role="presentation" aria-hidden="true">
   <defs>
-    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="dividerLine" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%"   stop-color="#A277FF" stop-opacity="0"/>
       <stop offset="50%"  stop-color="#A277FF" stop-opacity=".55"/>
       <stop offset="100%" stop-color="#A277FF" stop-opacity="0"/>
     </linearGradient>
+    <radialGradient id="dotHalo">
+      <stop offset="0%"   stop-color="#61FFCA" stop-opacity=".45"/>
+      <stop offset="100%" stop-color="#61FFCA" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <rect x="0" y="5" width="900" height="2" fill="url(#line)"/>
-  <circle cy="6" r="3.5" fill="#61FFCA">
-    <animate attributeName="cx" values="60;840;60" dur="9s" repeatCount="indefinite"/>
+
+  <rect x="0" y="6" width="900" height="2" fill="url(#dividerLine)"/>
+
+  <circle cy="7" r="9" fill="url(#dotHalo)">
+    <animate attributeName="cx" values="60;840;60" dur="9s"
+             calcMode="spline" keyTimes="0;0.5;1"
+             keySplines="0.4 0 0.2 1;0.4 0 0.2 1" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".15;1;.15" dur="9s" repeatCount="indefinite"/>
+  </circle>
+  <circle cy="7" r="3.5" fill="#61FFCA">
+    <animate attributeName="cx" values="60;840;60" dur="9s"
+             calcMode="spline" keyTimes="0;0.5;1"
+             keySplines="0.4 0 0.2 1;0.4 0 0.2 1" repeatCount="indefinite"/>
     <animate attributeName="opacity" values=".2;1;.2" dur="9s" repeatCount="indefinite"/>
   </circle>
 </svg>
