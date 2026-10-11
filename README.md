@@ -28,8 +28,8 @@ Most of what I build sits where language models meet real data: retrieval ground
 
 What I reach for first:
 
-`Python` `FastAPI` `LangGraph` `RAG` `Claude API` `OpenAI API` `Node.js` `PostgreSQL` `Kafka` `Redis` `AWS`
+`Python` `TypeScript` `FastAPI` `LangGraph` `RAG` `Claude API` `OpenAI API` `Node.js` `PostgreSQL` `Kafka` `Redis` `AWS`
 
 Also across the stack:
 
-`React` `Express` `Drizzle` `Docker` `CI/CD`
+`React` `Express` `Prisma` `Docker` `CI/CD`
