@@ -8,17 +8,15 @@
 
 <br>
 
-Backend & AI engineer. I lead backend and AI architecture for a financial planning platform used by financial consultants and their clients — turning what stakeholders need into clear specs, and guiding the team from design to production.
+**AI & Backend Software Engineer** · Agents · LLM integration · Fintech
 
-Most of what I build sits where language models meet real data: retrieval grounded in each client's actual finances, agents that do real work under human approval, and event-driven services that keep everything consistent.
+I build backend systems where language models meet real financial data: agents that do real work under human approval, retrieval grounded in each client's actual finances, and event-driven services that keep everything consistent.
 
 ### What I work on
 
-**Grounded advisory.** RAG pipelines and LLM workflows on the Claude and OpenAI APIs, answering from each client's real financial data instead of generic advice.
+**AI agents & LLM integration.** Agents that execute real tasks inside the product, with human approval before anything sensitive happens. RAG pipelines grounded in each client's own financial data, not generic answers.
 
-**WhatsApp → pull request.** An agentic intake pipeline I'm building now: consultants send text, audio, or images; Whisper and Claude turn them into structured tasks; coding agents pick them up and open PRs that wait on human approval.
-
-**Agents with guardrails.** A delivery process where coding agents move through fixed gates — investigate, propose, dry-run, an isolated staging environment per PR, human sign-off — and are hard-blocked from touching production.
+**Money & investment management.** I built a platform that clients used to manage their money and investments.
 
 **Open Finance.** Bank-account connection through Pluggy, webhook-driven sync, and automated transaction ingestion feeding cash-flow and planning features.
 
@@ -26,6 +24,9 @@ Most of what I build sits where language models meet real data: retrieval ground
 
 ### Stack
 
-What I reach for first:
-
-`TypeScript` `Python`  `FastAPI` `Express` `RAG` `Agents` `Fintech`
+**Languages:** `TypeScript` `Python`
+**Backend:** `FastAPI` `Express`
+**Data & messaging:** `PostgreSQL` `Redis` `Kafka`
+**Cloud:** `AWS`
+**AI:** `RAG` `LLM Agents`
+**Integrations:** `Pluggy` `Open Finance`
